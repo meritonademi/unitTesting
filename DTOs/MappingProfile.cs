@@ -9,8 +9,10 @@ namespace ItemManagementSystem1.DTOs
         {
             CreateMap<Item, ItemDTO>();
             CreateMap<ItemDTO, Item>();
-
+            CreateMap<Asset, AssetDTO>();
+            CreateMap<AssetDTO, Asset>();
+            CreateMap<Employee, EmployeeDTO>();
+            CreateMap<EmployeeDTO, Employee>();
         }
     }
-
 }

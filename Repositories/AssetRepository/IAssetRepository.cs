@@ -8,7 +8,7 @@ public interface IAssetRepository
 
     void UpdateAsset(Asset asset, Asset assetToUpdate);
 
-    Task AddAssetAsync(Asset asset);
+    Asset AddAssetAsync(Asset asset);
 
     Task<Asset> GetAssetById(int id);
 

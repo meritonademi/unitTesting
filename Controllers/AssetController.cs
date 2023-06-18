@@ -1,3 +1,4 @@
+using ItemManagementSystem1.DTOs;
 using ItemManagementSystem1.Models;
 using ItemManagementSystem1.Services.AssetService;
 using Microsoft.AspNetCore.Mvc;
@@ -35,9 +36,15 @@ public class AssetController : ControllerBase
     }
 
     [HttpPost]
-    public async Task<ActionResult<Asset>> CreateCategory(Asset item)
+    public async Task<ActionResult<Asset>> CreateCategory(AssetDTO item)
     {
-        await _assetService.CreateAsset(item);
+        Asset asset = new Asset()
+        {
+            Name = item.Name,
+            CategoryId = item.CategoryId,
+            SerialNr = item.SerialNr
+        };
+        await _assetService.CreateAsset(asset);
         return Ok(item);
     }
 

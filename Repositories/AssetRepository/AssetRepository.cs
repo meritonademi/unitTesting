@@ -23,10 +23,11 @@ public class AssetRepository : IAssetRepository
         return await _dbContext.Assets.FindAsync(id);
     }
 
-    public async Task AddAssetAsync(Asset asset)
+    public Asset AddAssetAsync(Asset asset)
     {
-        await _dbContext.Assets.AddAsync(asset);
+         _dbContext.Assets.Add(asset);
         _dbContext.SaveChanges();
+        return asset;
     }
 
     public void UpdateAsset(Asset asset, Asset assetToUpdate)

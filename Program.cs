@@ -4,11 +4,13 @@ using ItemManagementSystem1.Repositories;
 using ItemManagementSystem1.Repositories.AssetRepository;
 using ItemManagementSystem1.Repositories.CategoryRepository;
 using ItemManagementSystem1.Repositories.DepartmentRepository;
+using ItemManagementSystem1.Repositories.EmployeeRepository;
 using ItemManagementSystem1.Repositories.ItemRepository;
 using ItemManagementSystem1.Services.AssetService;
 using ItemManagementSystem1.Services.AuthenticationService;
 using ItemManagementSystem1.Services.CategoryService;
 using ItemManagementSystem1.Services.DepartmentService;
+using ItemManagementSystem1.Services.EmployeeService;
 using ItemManagementSystem1.Services.ItemService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -89,6 +91,8 @@ builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IAssetService, AssetService>();
 builder.Services.AddScoped<IAssetRepository, AssetRepository>();
+builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+builder.Services.AddScoped<IEmployeeService, EmployeeService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services
