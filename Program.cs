@@ -1,9 +1,11 @@
 using System.Text;
 using ItemManagementSystem1.Data;
 using ItemManagementSystem1.Repositories;
+using ItemManagementSystem1.Repositories.AssetRepository;
 using ItemManagementSystem1.Repositories.CategoryRepository;
 using ItemManagementSystem1.Repositories.DepartmentRepository;
 using ItemManagementSystem1.Repositories.ItemRepository;
+using ItemManagementSystem1.Services.AssetService;
 using ItemManagementSystem1.Services.AuthenticationService;
 using ItemManagementSystem1.Services.CategoryService;
 using ItemManagementSystem1.Services.DepartmentService;
@@ -54,7 +56,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAnyOrigin", builder =>
     {
-        builder.AllowAnyOrigin()
+        builder.WithOrigins("http://localhost:4200")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
@@ -85,6 +87,8 @@ builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<IAssetService, AssetService>();
+builder.Services.AddScoped<IAssetRepository, AssetRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services
@@ -121,5 +125,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors("AllowAnyOrigin");
 
 app.Run();

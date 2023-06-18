@@ -3,12 +3,16 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ItemManagementSystem1.Models;
 
-public class Department
+public class Asset
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
     public string Name { get; set; }
-    public ICollection<Department> Departments { get; set; }
+    public string SerialNr { get; set; }
+
+    public int CategoryId { get; set; }
+    [ForeignKey("CategoryId")]
+    public Category Category { get; set; }
 }
