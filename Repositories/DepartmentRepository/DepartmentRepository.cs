@@ -29,9 +29,11 @@ namespace ItemManagementSystem1.Repositories.DepartmentRepository
             _dbContext.SaveChanges();
         }
 
-        public void UpdateDepartment(Department department)
+        public void UpdateDepartment(Department department, Department departmentToUpdate)
         {
-            _dbContext.Entry(department).State = EntityState.Modified;
+            department.Id = departmentToUpdate.Id;
+            department.Name = departmentToUpdate.Name;
+            _dbContext.Departments.Update(department);
             _dbContext.SaveChanges();
         }
 

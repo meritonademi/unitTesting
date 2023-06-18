@@ -47,7 +47,7 @@ public class AssetService : IAssetService
                 throw new ArgumentException("Asset not found.");
             }
 
-            _assetRepository.UpdateAsset(asset);
+            _assetRepository.UpdateAsset(item, asset);
             return "Successfully update";
         }
         catch (Exception ex)

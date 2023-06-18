@@ -29,9 +29,11 @@ public class AssetRepository : IAssetRepository
         _dbContext.SaveChanges();
     }
 
-    public void UpdateAsset(Asset asset)
+    public void UpdateAsset(Asset asset, Asset assetToUpdate)
     {
-        _dbContext.Entry(asset).State = EntityState.Modified;
+        asset.Id = assetToUpdate.Id;
+        asset.Name = assetToUpdate.Name;
+        _dbContext.Assets.Update(asset);
         _dbContext.SaveChanges();
     }
 

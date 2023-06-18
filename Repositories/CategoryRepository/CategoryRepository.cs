@@ -29,9 +29,11 @@ public class CategoryRepository : ICategoryRepository
         _dbContext.SaveChanges();
     }
 
-    public void UpdateCategory(Category category)
+    public void UpdateCategory(Category category, Category categoryToUpdate)
     {
-        _dbContext.Entry(category).State = EntityState.Modified;
+        category.Id = categoryToUpdate.Id;
+        category.Name = categoryToUpdate.Name;
+        _dbContext.Categories.Update(category);
         _dbContext.SaveChanges();
     }
 

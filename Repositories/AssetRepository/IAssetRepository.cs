@@ -6,7 +6,7 @@ public interface IAssetRepository
 {
     void RemoveAsset(Asset asset);
 
-    void UpdateAsset(Asset asset);
+    void UpdateAsset(Asset asset, Asset assetToUpdate);
 
     Task AddAssetAsync(Asset asset);
 

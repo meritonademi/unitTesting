@@ -47,7 +47,7 @@ public class CategoryService : ICategoryService
                 throw new ArgumentException("Category not found.");
             }
 
-            _categoryRepository.UpdateCategory(category);
+            _categoryRepository.UpdateCategory(item, category);
             return "Successfully update";
         }
         catch (Exception ex)

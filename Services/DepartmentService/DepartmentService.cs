@@ -47,7 +47,7 @@ public class DepartmentService : IDepartmentService
                 throw new ArgumentException("Department not found.");
             }
 
-            _departmentRepository.UpdateDepartment(department);
+            _departmentRepository.UpdateDepartment(item, department);
             return "Successfully update";
         }
         catch (Exception ex)
