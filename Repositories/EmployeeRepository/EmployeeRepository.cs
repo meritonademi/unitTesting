@@ -1,4 +1,5 @@
 using ItemManagementSystem1.Data;
+using ItemManagementSystem1.DTOs;
 using ItemManagementSystem1.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -30,7 +31,7 @@ public class EmployeeRepository : IEmployeeRepository
         return employee;
     }
 
-    public void UpdateEmployee(Employee employee, Employee employeeToUpdate)
+    public void UpdateEmployee(Employee employee, EmployeeDTO employeeToUpdate)
     {
         employee.Name = employeeToUpdate.Name;
         employee.SurName = employeeToUpdate.SurName;

@@ -51,7 +51,7 @@ public class EmployeeController : ControllerBase
 
 
     [HttpPut("{id}")]
-    public async Task<ActionResult> UpdateEmployeeAsync(int id, Employee employee)
+    public async Task<ActionResult> UpdateEmployeeAsync(int id, EmployeeDTO employee)
     {
         if (id != employee.Id)
         {

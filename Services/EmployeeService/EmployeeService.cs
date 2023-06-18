@@ -1,3 +1,4 @@
+using ItemManagementSystem1.DTOs;
 using ItemManagementSystem1.Models;
 using ItemManagementSystem1.Repositories.EmployeeRepository;
 
@@ -37,7 +38,7 @@ public class EmployeeService : IEmployeeService
         }
     }
 
-    public async Task<string> UpdateEmployeeAsync(int id, Employee employee)
+    public async Task<string> UpdateEmployeeAsync(int id, EmployeeDTO employee)
     {
         try
         {
