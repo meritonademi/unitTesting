@@ -34,7 +34,7 @@ public class EmployeeRepository : IEmployeeRepository
     {
         employee.Name = employeeToUpdate.Name;
         employee.SurName = employeeToUpdate.SurName;
-        employee.Department = employeeToUpdate.Department;
+        employee.DepartmentId = employeeToUpdate.DepartmentId;
         employee.Tel = employeeToUpdate.Tel;
         _dbContext.Employees.Update(employee);
         _dbContext.SaveChanges();
