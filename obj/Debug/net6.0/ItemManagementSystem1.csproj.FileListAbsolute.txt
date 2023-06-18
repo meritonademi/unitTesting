@@ -1,0 +1,109 @@
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.csproj.AssemblyReference.cache
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.AssemblyInfoInputs.cache
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.AssemblyInfo.cs
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.csproj.CoreCompileInputs.cache
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/appsettings.Development.json
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/appsettings.json
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1.exe
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1.deps.json
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1.runtimeconfig.json
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1.pdb
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/AutoMapper.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Humanizer.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.OpenApi.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Npgsql.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/staticwebassets.build.json
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/staticwebassets.development.json
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/scopedcss/bundle/ItemManagementSystem1.styles.css
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.csproj.CopyComplete
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/refint/ItemManagementSystem1.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.pdb
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.genruntimeconfig.cache
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/obj/Debug/net6.0/ref/ItemManagementSystem1.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+C:/Users/flori/source/repos/ItemManagementSystem1/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/appsettings.Development.json
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/appsettings.json
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1.deps.json
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1.runtimeconfig.json
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/ItemManagementSystem1.pdb
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/AutoMapper.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Humanizer.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.Extensions.Caching.Memory.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.Extensions.Identity.Core.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Microsoft.OpenApi.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Npgsql.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/System.Diagnostics.DiagnosticSource.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.csproj.AssemblyReference.cache
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.AssemblyInfoInputs.cache
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.AssemblyInfo.cs
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.csproj.CoreCompileInputs.cache
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.MvcApplicationPartsAssemblyInfo.cs
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.MvcApplicationPartsAssemblyInfo.cache
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/staticwebassets/msbuild.ItemManagementSystem1.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/staticwebassets/msbuild.build.ItemManagementSystem1.props
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/staticwebassets/msbuild.buildMultiTargeting.ItemManagementSystem1.props
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/staticwebassets/msbuild.buildTransitive.ItemManagementSystem1.props
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/staticwebassets.pack.json
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/staticwebassets.build.json
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/staticwebassets.development.json
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/scopedcss/bundle/ItemManagementSystem1.styles.css
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.csproj.CopyComplete
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/refint/ItemManagementSystem1.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.pdb
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ItemManagementSystem1.genruntimeconfig.cache
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/obj/Debug/net6.0/ref/ItemManagementSystem1.dll
