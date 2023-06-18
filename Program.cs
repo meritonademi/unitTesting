@@ -1,13 +1,17 @@
-using Microsoft.EntityFrameworkCore;
+using System.Text;
 using ItemManagementSystem1.Data;
 using ItemManagementSystem1.Repositories;
+using ItemManagementSystem1.Repositories.CategoryRepository;
+using ItemManagementSystem1.Repositories.DepartmentRepository;
 using ItemManagementSystem1.Repositories.ItemRepository;
-using ItemManagementSystem1.Services.ItemService;
 using ItemManagementSystem1.Services.AuthenticationService;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
+using ItemManagementSystem1.Services.CategoryService;
+using ItemManagementSystem1.Services.DepartmentService;
+using ItemManagementSystem1.Services.ItemService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,23 +40,23 @@ builder.Services.AddSwaggerGen(option =>
             {
                 Reference = new OpenApiReference
                 {
-                    Type=ReferenceType.SecurityScheme,
-                    Id="Bearer"
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
                 }
             },
-            new string[]{}
+            new string[] { }
         }
     });
 });
 builder.Services.AddDbContext<AppDbContext>(options =>
-options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAnyOrigin", builder =>
     {
         builder.AllowAnyOrigin()
-        .AllowAnyHeader()
-        .AllowAnyMethod();
+            .AllowAnyHeader()
+            .AllowAnyMethod();
     });
 });
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -76,9 +80,11 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddScoped<IItemRepository, ItemRepository>();
-
-
 builder.Services.AddScoped<IItemService, ItemService>();
+builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 builder.Services
@@ -97,7 +103,6 @@ builder.Services
 builder.Services.AddScoped<UserManager<IdentityUser>>();
 
 builder.Services.AddScoped<TokenService, TokenService>();
-
 
 
 var app = builder.Build();
