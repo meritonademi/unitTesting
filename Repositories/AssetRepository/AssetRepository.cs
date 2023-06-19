@@ -1,6 +1,5 @@
 using ItemManagementSystem1.Data;
 using ItemManagementSystem1.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace ItemManagementSystem1.Repositories.AssetRepository;
 
@@ -15,17 +14,54 @@ public class AssetRepository : IAssetRepository
 
     public async Task<IEnumerable<Asset>> GetAllAssets()
     {
-        return await _dbContext.Assets.ToListAsync();
+        List<Asset> assets = new List<Asset>(_dbContext.Assets);
+
+        var fullEntries = _dbContext.Assets.Join(
+            _dbContext.Categories,
+            asset => asset.CategoryId,
+            category => category.Id,
+            (asset, category) => new { asset, category }
+        );
+
+        foreach (var fullEntry in fullEntries)
+        {
+            Asset item = new Asset();
+            item = fullEntry.asset;
+            item.Category = fullEntry.category;
+            assets.Add(item);
+        }
+
+        return assets;
     }
 
     public async Task<Asset> GetAssetById(int id)
     {
-        return await _dbContext.Assets.FindAsync(id);
+        var fullEntries = _dbContext.Assets.Join(
+            _dbContext.Categories,
+            asset => asset.CategoryId,
+            category => category.Id,
+            (asset, category) => new { asset, category }
+        ).Where(fullyEntries => fullyEntries.asset.Id.Equals(id));
+
+
+        Asset asset = new Asset();
+        foreach (var fullEntry in fullEntries)
+        {
+            asset = fullEntry.asset;
+            asset.Category = fullEntry.category;
+        }
+
+        if (asset.Id == 0)
+        {
+            return null;
+        }
+
+        return asset;
     }
 
     public Asset AddAssetAsync(Asset asset)
     {
-         _dbContext.Assets.Add(asset);
+        _dbContext.Assets.Add(asset);
         _dbContext.SaveChanges();
         return asset;
     }

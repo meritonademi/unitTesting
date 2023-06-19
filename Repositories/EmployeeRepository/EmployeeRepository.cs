@@ -1,7 +1,6 @@
 using ItemManagementSystem1.Data;
 using ItemManagementSystem1.DTOs;
 using ItemManagementSystem1.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace ItemManagementSystem1.Repositories.EmployeeRepository;
 
@@ -16,12 +15,49 @@ public class EmployeeRepository : IEmployeeRepository
 
     public async Task<IEnumerable<Employee>> GetAllEmployees()
     {
-        return await _dbContext.Employees.ToListAsync();
+        List<Employee> employee = new List<Employee>(_dbContext.Employees);
+
+        var fullEntries = _dbContext.Employees.Join(
+            _dbContext.Departments,
+            employee => employee.DepartmentId,
+            department => department.Id,
+            (employee, department) => new { employee, department }
+        );
+
+        foreach (var fullEntry in fullEntries)
+        {
+            Employee item = new Employee();
+            item = fullEntry.employee;
+            item.Department = fullEntry.department;
+            employee.Add(item);
+        }
+
+        return employee;
     }
 
     public async Task<Employee> GetEmployeeById(int id)
     {
-        return await _dbContext.Employees.FindAsync(id);
+        var fullEntries = _dbContext.Employees.Join(
+            _dbContext.Departments,
+            employee => employee.DepartmentId,
+            department => department.Id,
+            (employee, department) => new { employee, department }
+        ).Where(fullyEntries => fullyEntries.employee.Id.Equals(id));
+
+
+        Employee employee = new Employee();
+        foreach (var fullEntry in fullEntries)
+        {
+            employee = fullEntry.employee;
+            employee.Department = fullEntry.department;
+        }
+
+        if (employee.Id == 0)
+        {
+            return null;
+        }
+
+        return employee;
     }
 
     public Employee AddEmployeeAsync(Employee employee)
