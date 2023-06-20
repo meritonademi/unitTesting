@@ -1,6 +1,7 @@
 using ItemManagementSystem1.DTOs;
 using ItemManagementSystem1.Models;
 using ItemManagementSystem1.Services.AssetService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ItemManagementSystem1.Controllers;
@@ -16,13 +17,14 @@ public class AssetController : ControllerBase
         _assetService = assetService ?? throw new ArgumentNullException(nameof(assetService));
     }
 
+    [Authorize(Policy = "role")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Asset>>> GetAllAssets()
     {
         var items = await _assetService.GetAllAssets();
         return Ok(items);
     }
-
+    [Authorize(Policy = "role")]
     [HttpGet("{id}")]
     public async Task<ActionResult<Asset>> GetAssetById(int id)
     {
@@ -34,7 +36,7 @@ public class AssetController : ControllerBase
 
         return Ok(item);
     }
-
+    [Authorize(Policy = "role")]
     [HttpPost]
     public async Task<ActionResult<Asset>> CreateCategory(AssetDTO item)
     {
@@ -48,7 +50,7 @@ public class AssetController : ControllerBase
         return Ok(item);
     }
 
-
+    [Authorize(Policy = "role")]
     [HttpPut("{id}")]
     public async Task<ActionResult> UpdateAssetAsync(int id, Asset asset)
     {
@@ -67,7 +69,7 @@ public class AssetController : ControllerBase
             return NotFound();
         }
     }
-
+    [Authorize(Policy = "role")]
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteAsset(int id)
     {

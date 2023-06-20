@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8P3SERG7wp7V2j0Ma3nabbVEQXzrottIGs4GsH5qp67VZcQ95E9NodneDUUEJh4/8DPnVhLqQ6AUS3mIXmKHjA==",
+  "dgSpecHash": "EyDw3v5V1svqFx6AWCXMEU9YNOeWvQbDExklwAlb8NZkxaR2ukZGIWXfL0wnvXCZeEX77XeI45faXEOJKN1LAw==",
   "success": true,
   "projectFilePath": "/Users/meritonademi/Downloads/ItemManagementSystem1 4/ItemManagementSystem1/ItemManagementSystem1.csproj",
   "expectedPackageFiles": [
@@ -30,12 +30,11 @@
     "/Users/meritonademi/.nuget/packages/microsoft.extensions.logging.abstractions/6.0.0/microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
-    "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.abstractions/6.29.0/microsoft.identitymodel.abstractions.6.29.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.jsonwebtokens/6.10.0/microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
-    "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.logging/6.29.0/microsoft.identitymodel.logging.6.29.0.nupkg.sha512",
+    "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.logging/6.10.0/microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.protocols/6.10.0/microsoft.identitymodel.protocols.6.10.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.10.0/microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
-    "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.tokens/6.29.0/microsoft.identitymodel.tokens.6.29.0.nupkg.sha512",
+    "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.tokens/6.10.0/microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/npgsql/6.0.0/npgsql.6.0.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.0/npgsql.entityframeworkcore.postgresql.6.0.0.nupkg.sha512",

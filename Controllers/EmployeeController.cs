@@ -1,6 +1,7 @@
 using ItemManagementSystem1.DTOs;
 using ItemManagementSystem1.Models;
 using ItemManagementSystem1.Services.EmployeeService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ItemManagementSystem1.Controllers;
@@ -16,6 +17,7 @@ public class EmployeeController : ControllerBase
         _employeeService = employeeService ?? throw new ArgumentNullException(nameof(employeeService));
     }
 
+    [Authorize(Policy = "role")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Employee>>> GetAllEmployee()
     {
@@ -23,6 +25,7 @@ public class EmployeeController : ControllerBase
         return Ok(items);
     }
 
+    [Authorize(Policy = "role")]
     [HttpGet("{id}")]
     public async Task<ActionResult<Employee>> GetEmployeeById(int id)
     {
@@ -34,7 +37,8 @@ public class EmployeeController : ControllerBase
 
         return Ok(item);
     }
-
+    
+    [Authorize(Policy = "role")]
     [HttpPost]
     public async Task<ActionResult<Employee>> CreateEmployee(EmployeeDTO item)
     {
@@ -50,6 +54,7 @@ public class EmployeeController : ControllerBase
     }
 
 
+    [Authorize(Policy = "role")]
     [HttpPut("{id}")]
     public async Task<ActionResult> UpdateEmployeeAsync(int id, EmployeeDTO employee)
     {
@@ -69,6 +74,7 @@ public class EmployeeController : ControllerBase
         }
     }
 
+    [Authorize(Policy = "role")]
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteEmployee(int id)
     {

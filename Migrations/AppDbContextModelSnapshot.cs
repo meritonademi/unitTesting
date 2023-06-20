@@ -48,6 +48,29 @@ namespace ItemManagementSystem1.Migrations
                     b.ToTable("Assets");
                 });
 
+            modelBuilder.Entity("ItemManagementSystem1.Models.Asset_Employee", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AssetId")
+                        .HasColumnType("integer");
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("integer");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AssetId");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("AssetsEmployees");
+                });
+
             modelBuilder.Entity("ItemManagementSystem1.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -338,7 +361,7 @@ namespace ItemManagementSystem1.Migrations
             modelBuilder.Entity("ItemManagementSystem1.Models.Asset", b =>
                 {
                     b.HasOne("ItemManagementSystem1.Models.Category", "Category")
-                        .WithMany("Assets")
+                        .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -346,10 +369,29 @@ namespace ItemManagementSystem1.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("ItemManagementSystem1.Models.Asset_Employee", b =>
+                {
+                    b.HasOne("ItemManagementSystem1.Models.Asset", "Asset")
+                        .WithMany()
+                        .HasForeignKey("AssetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ItemManagementSystem1.Models.Employee", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Asset");
+
+                    b.Navigation("Employee");
+                });
+
             modelBuilder.Entity("ItemManagementSystem1.Models.Employee", b =>
                 {
                     b.HasOne("ItemManagementSystem1.Models.Department", "Department")
-                        .WithMany("Employees")
+                        .WithMany()
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -406,16 +448,6 @@ namespace ItemManagementSystem1.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("ItemManagementSystem1.Models.Category", b =>
-                {
-                    b.Navigation("Assets");
-                });
-
-            modelBuilder.Entity("ItemManagementSystem1.Models.Department", b =>
-                {
-                    b.Navigation("Employees");
                 });
 #pragma warning restore 612, 618
         }

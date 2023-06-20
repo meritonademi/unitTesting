@@ -1,5 +1,6 @@
 using ItemManagementSystem1.Models;
 using ItemManagementSystem1.Services.CategoryService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ItemManagementSystem1.Controllers;
@@ -15,6 +16,7 @@ public class CategoryController : ControllerBase
         _categoryService = categoryService ?? throw new ArgumentNullException(nameof(categoryService));
     }
 
+    [Authorize(Policy = "role")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Category>>> GetAllCategories()
     {
@@ -22,6 +24,7 @@ public class CategoryController : ControllerBase
         return Ok(items);
     }
 
+    [Authorize(Policy = "role")]
     [HttpGet("{id}")]
     public async Task<ActionResult<Category>> GetCategoryById(int id)
     {
@@ -34,6 +37,7 @@ public class CategoryController : ControllerBase
         return Ok(item);
     }
 
+    [Authorize(Policy = "role")]
     [HttpPost]
     public async Task<ActionResult<Category>> CreateCategory(Category item)
     {
@@ -42,6 +46,7 @@ public class CategoryController : ControllerBase
     }
 
 
+    [Authorize(Policy = "role")]
     [HttpPut("{id}")]
     public async Task<ActionResult> UpdateCategoryAsync(int id, Category category)
     {
@@ -60,7 +65,8 @@ public class CategoryController : ControllerBase
             return NotFound();
         }
     }
-
+    
+    [Authorize(Policy = "role")]
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteCategory(int id)
     {

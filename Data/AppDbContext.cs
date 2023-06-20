@@ -10,10 +10,10 @@ namespace ItemManagementSystem1.Data
         {
         }
 
-        public DbSet<Item> Items { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Asset> Assets { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Asset_Employee> AssetsEmployees { get; set; }
     }
 }

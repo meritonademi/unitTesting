@@ -10,27 +10,24 @@ namespace ItemManagementSystem1.Services.AuthenticationService
     public class TokenService
     {
         private const int ExpirationMinutes = 30;
+
         public string CreateToken(IdentityUser user)
         {
-            var expiration = DateTime.UtcNow.AddMinutes(ExpirationMinutes);
-            var token = CreateJwtToken(
-                CreateClaims(user),
-                CreateSigningCredentials(),
-                expiration
-            );
             var tokenHandler = new JwtSecurityTokenHandler();
+            var expiration = TimeSpan.FromHours(1);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Audience = "apiWithAuthBackend",
+                Issuer = "apiWithAuthBackend",
+                Subject = new ClaimsIdentity(CreateClaims(user)),
+                Expires = DateTime.UtcNow.Add(expiration),
+                SigningCredentials = CreateSigningCredentials(),
+            };
+            var token = tokenHandler.CreateToken(
+                tokenDescriptor
+            );
             return tokenHandler.WriteToken(token);
         }
-
-        private JwtSecurityToken CreateJwtToken(List<Claim> claims, SigningCredentials credentials,
-            DateTime expiration) =>
-            new(
-                "apiWithAuthBackend",
-                "apiWithAuthBackend",
-                claims,
-                expires: expiration,
-                signingCredentials: credentials
-            );
 
         private List<Claim> CreateClaims(IdentityUser user)
         {
@@ -38,12 +35,13 @@ namespace ItemManagementSystem1.Services.AuthenticationService
             {
                 var claims = new List<Claim>
                 {
-                    new Claim(JwtRegisteredClaimNames.Sub, "TokenForTheApiWithAuth"),
-                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-                    new Claim(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString(CultureInfo.InvariantCulture)),
-                    new Claim(ClaimTypes.NameIdentifier, user.Id),
-                    new Claim(ClaimTypes.Name, user.UserName),
-                    new Claim(ClaimTypes.Email, user.Email)
+                    new(JwtRegisteredClaimNames.Sub, user.Email),
+                    new(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                    new(JwtRegisteredClaimNames.Iat, DateTime.UtcNow.ToString(CultureInfo.InvariantCulture)),
+                    new(ClaimTypes.NameIdentifier, user.Id),
+                    new(ClaimTypes.Name, user.UserName),
+                    new(ClaimTypes.Email, user.Email),
+                    new(ClaimTypes.Role, "Admin")
                 };
                 return claims;
             }
@@ -53,13 +51,14 @@ namespace ItemManagementSystem1.Services.AuthenticationService
                 throw;
             }
         }
+
         private SigningCredentials CreateSigningCredentials()
         {
             return new SigningCredentials(
                 new SymmetricSecurityKey(
-                    Encoding.UTF8.GetBytes("!SomethingSecret!")
+                    Encoding.UTF8.GetBytes("MeritonAdemiAdemiMeriton")
                 ),
-                SecurityAlgorithms.HmacSha256
+                SecurityAlgorithms.HmacSha256Signature
             );
         }
     }

@@ -1,17 +1,16 @@
 using System.Text;
 using ItemManagementSystem1.Data;
-using ItemManagementSystem1.Repositories;
+using ItemManagementSystem1.Repositories.AssetEmployeeRepository;
 using ItemManagementSystem1.Repositories.AssetRepository;
 using ItemManagementSystem1.Repositories.CategoryRepository;
 using ItemManagementSystem1.Repositories.DepartmentRepository;
 using ItemManagementSystem1.Repositories.EmployeeRepository;
-using ItemManagementSystem1.Repositories.ItemRepository;
+using ItemManagementSystem1.Services.AssetEmployeeService;
 using ItemManagementSystem1.Services.AssetService;
 using ItemManagementSystem1.Services.AuthenticationService;
 using ItemManagementSystem1.Services.CategoryService;
 using ItemManagementSystem1.Services.DepartmentService;
 using ItemManagementSystem1.Services.EmployeeService;
-using ItemManagementSystem1.Services.ItemService;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -63,28 +62,36 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
     });
 });
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+builder.Services.AddAuthentication(x =>
+    {
+        x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+        x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+        x.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+    })
     .AddJwtBearer(options =>
     {
         options.TokenValidationParameters = new TokenValidationParameters
         {
-            ClockSkew = TimeSpan.Zero,
+            ValidIssuer = "apiWithAuthBackend",
+            ValidAudience = "apiWithAuthBackend",
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes("MeritonAdemiAdemiMeriton")
+            ),
             ValidateIssuer = true,
             ValidateAudience = true,
             ValidateLifetime = true,
             ValidateIssuerSigningKey = true,
-            ValidIssuer = "apiWithAuthBackend",
-            ValidAudience = "apiWithAuthBackend",
-            IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes("!SomethingSecret!")
-            ),
         };
     });
 
+builder.Services.AddAuthorization(option =>
+{
+    option.AddPolicy("role",
+        p => p.RequireRole("Admin"));
+});
+
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddScoped<IItemRepository, ItemRepository>();
-builder.Services.AddScoped<IItemService, ItemService>();
 builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
 builder.Services.AddScoped<IDepartmentService, DepartmentService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -93,7 +100,8 @@ builder.Services.AddScoped<IAssetService, AssetService>();
 builder.Services.AddScoped<IAssetRepository, AssetRepository>();
 builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
 builder.Services.AddScoped<IEmployeeService, EmployeeService>();
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IAssetEmployeeRepository, AssetEmployeeRepository>();
+builder.Services.AddScoped<IAssetEmployeeService, AssetEmployeeService>();
 
 builder.Services
     .AddIdentityCore<IdentityUser>(options =>
@@ -122,12 +130,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+
 app.UseHttpsRedirection();
-
 app.UseAuthentication();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.UseCors("AllowAnyOrigin");

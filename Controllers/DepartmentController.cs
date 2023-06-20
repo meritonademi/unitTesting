@@ -1,5 +1,6 @@
 using ItemManagementSystem1.Models;
 using ItemManagementSystem1.Services.DepartmentService;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ItemManagementSystem1.Controllers;
@@ -15,6 +16,7 @@ public class DepartmentController : ControllerBase
         _departmentService = departmentService ?? throw new ArgumentNullException(nameof(departmentService));
     }
 
+    [Authorize(Policy = "role")]
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Department>>> GetAllDepartment()
     {
@@ -22,6 +24,7 @@ public class DepartmentController : ControllerBase
         return Ok(items);
     }
 
+    [Authorize(Policy = "role")]
     [HttpGet("{id}")]
     public async Task<ActionResult<Department>> GetDepartmentById(int id)
     {
@@ -34,6 +37,7 @@ public class DepartmentController : ControllerBase
         return Ok(item);
     }
 
+    [Authorize(Policy = "role")]
     [HttpPost]
     public async Task<ActionResult<Department>> CreateDepartment(Department item)
     {
@@ -42,6 +46,7 @@ public class DepartmentController : ControllerBase
     }
 
 
+    [Authorize(Policy = "role")]
     [HttpPut("{id}")]
     public async Task<ActionResult> UpdateItemAsync(int id, Department department)
     {
@@ -61,6 +66,7 @@ public class DepartmentController : ControllerBase
         }
     }
 
+    [Authorize(Policy = "role")]
     [HttpDelete("{id}")]
     public async Task<ActionResult> DeleteDepartment(int id)
     {
