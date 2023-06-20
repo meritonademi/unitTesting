@@ -1,7 +1,7 @@
-using ItemManagementSystem1.Models;
-using ItemManagementSystem1.Repositories.DepartmentRepository;
+using SOAProject.Models;
+using SOAProject.Repositories.DepartmentRepository;
 
-namespace ItemManagementSystem1.Services.DepartmentService;
+namespace SOAProject.Services.DepartmentService;
 
 public class DepartmentService : IDepartmentService
 {

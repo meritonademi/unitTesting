@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 
-namespace ItemManagementSystem1.Models;
+namespace SOAProject.Models;
 
 public class Asset_Employee
 {

@@ -1,6 +1,6 @@
-using ItemManagementSystem1.Models;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Services.AssetService;
+namespace SOAProject.Services.AssetService;
 
 public interface IAssetService
 {

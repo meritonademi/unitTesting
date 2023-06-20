@@ -1,6 +1,6 @@
-using ItemManagementSystem1.Models;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Services.CategoryService;
+namespace SOAProject.Services.CategoryService;
 
 public interface ICategoryService
 {

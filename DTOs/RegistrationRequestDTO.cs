@@ -1,4 +1,4 @@
-﻿namespace ItemManagementSystem1.DTOs
+﻿namespace SOAProject.DTOs
 {
     public class RegistrationRequestDTO
     {

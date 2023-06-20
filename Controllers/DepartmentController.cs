@@ -1,9 +1,9 @@
-using ItemManagementSystem1.Models;
-using ItemManagementSystem1.Services.DepartmentService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using SOAProject.Models;
+using SOAProject.Services.DepartmentService;
 
-namespace ItemManagementSystem1.Controllers;
+namespace SOAProject.Controllers;
 
 [ApiController]
 [Route("api/departments")]

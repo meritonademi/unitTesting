@@ -1,6 +1,6 @@
-using ItemManagementSystem1.Models;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Repositories.AssetRepository;
+namespace SOAProject.Repositories.AssetRepository;
 
 public interface IAssetRepository
 {

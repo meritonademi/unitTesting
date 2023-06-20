@@ -1,8 +1,8 @@
-using ItemManagementSystem1.Data;
-using ItemManagementSystem1.DTOs;
-using ItemManagementSystem1.Models;
+using SOAProject.Data;
+using SOAProject.DTOs;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Repositories.AssetEmployeeRepository;
+namespace SOAProject.Repositories.AssetEmployeeRepository;
 
 public class AssetEmployeeRepository : IAssetEmployeeRepository
 {

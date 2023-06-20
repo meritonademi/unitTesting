@@ -1,7 +1,7 @@
-using ItemManagementSystem1.DTOs;
-using ItemManagementSystem1.Models;
+using SOAProject.DTOs;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Services.AssetEmployeeService;
+namespace SOAProject.Services.AssetEmployeeService;
 
 public interface IAssetEmployeeService
 {

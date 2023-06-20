@@ -1,6 +1,6 @@
-using ItemManagementSystem1.Models;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Services.DepartmentService;
+namespace SOAProject.Services.DepartmentService;
 
 public interface IDepartmentService
 {

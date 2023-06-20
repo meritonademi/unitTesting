@@ -1,8 +1,8 @@
-using ItemManagementSystem1.Data;
-using ItemManagementSystem1.Models;
 using Microsoft.EntityFrameworkCore;
+using SOAProject.Data;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Repositories.CategoryRepository;
+namespace SOAProject.Repositories.CategoryRepository;
 
 public class CategoryRepository : ICategoryRepository
 {

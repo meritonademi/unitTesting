@@ -1,9 +1,9 @@
-using ItemManagementSystem1.DTOs;
-using ItemManagementSystem1.Models;
-using ItemManagementSystem1.Repositories.AssetEmployeeRepository;
 using Microsoft.AspNetCore.Mvc;
+using SOAProject.DTOs;
+using SOAProject.Models;
+using SOAProject.Repositories.AssetEmployeeRepository;
 
-namespace ItemManagementSystem1.Services.AssetEmployeeService;
+namespace SOAProject.Services.AssetEmployeeService;
 
 public class AssetEmployeeService : IAssetEmployeeService
 {

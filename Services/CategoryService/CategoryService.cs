@@ -1,7 +1,7 @@
-using ItemManagementSystem1.Models;
-using ItemManagementSystem1.Repositories.CategoryRepository;
+using SOAProject.Models;
+using SOAProject.Repositories.CategoryRepository;
 
-namespace ItemManagementSystem1.Services.CategoryService;
+namespace SOAProject.Services.CategoryService;
 
 public class CategoryService : ICategoryService
 {

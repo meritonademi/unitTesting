@@ -1,7 +1,7 @@
-using ItemManagementSystem1.Data;
-using ItemManagementSystem1.Models;
+using SOAProject.Data;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Repositories.AssetRepository;
+namespace SOAProject.Repositories.AssetRepository;
 
 public class AssetRepository : IAssetRepository
 {

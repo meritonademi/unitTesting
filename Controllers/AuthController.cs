@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
-using ItemManagementSystem1.DTOs;
-using ItemManagementSystem1.Data;
-using ItemManagementSystem1.Services.AuthenticationService;
+using SOAProject.Data;
+using SOAProject.DTOs;
+using SOAProject.Services.AuthenticationService;
 
-namespace ItemManagementSystem1.Controllers
+namespace SOAProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

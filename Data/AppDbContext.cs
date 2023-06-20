@@ -1,8 +1,8 @@
-﻿using ItemManagementSystem1.Models;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Data
+namespace SOAProject.Data
 {
     public class AppDbContext : IdentityDbContext
     {

@@ -1,8 +1,8 @@
-using ItemManagementSystem1.DTOs;
-using ItemManagementSystem1.Models;
-using ItemManagementSystem1.Repositories.EmployeeRepository;
+using SOAProject.DTOs;
+using SOAProject.Models;
+using SOAProject.Repositories.EmployeeRepository;
 
-namespace ItemManagementSystem1.Services.EmployeeService;
+namespace SOAProject.Services.EmployeeService;
 
 public class EmployeeService : IEmployeeService
 {

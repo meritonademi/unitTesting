@@ -1,6 +1,6 @@
-using ItemManagementSystem1.Models;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Repositories.DepartmentRepository;
+namespace SOAProject.Repositories.DepartmentRepository;
 
 public interface IDepartmentRepository
 {

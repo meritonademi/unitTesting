@@ -4,7 +4,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
 #nullable disable
 
-namespace ItemManagementSystem1.Migrations
+namespace SOAProject.Migrations
 {
     public partial class AddedIdentityRoles : Migration
     {

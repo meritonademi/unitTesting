@@ -1,8 +1,8 @@
-using ItemManagementSystem1.Data;
-using ItemManagementSystem1.Models;
 using Microsoft.EntityFrameworkCore;
+using SOAProject.Data;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.Repositories.DepartmentRepository
+namespace SOAProject.Repositories.DepartmentRepository
 {
     public class DepartmentRepository : IDepartmentRepository
     {

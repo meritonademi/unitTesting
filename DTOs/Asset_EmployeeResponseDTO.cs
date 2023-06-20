@@ -1,6 +1,6 @@
-using ItemManagementSystem1.Models;
+using SOAProject.Models;
 
-namespace ItemManagementSystem1.DTOs;
+namespace SOAProject.DTOs;
 
 public class Asset_EmployeeResponseDTO
 {

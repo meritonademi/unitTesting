@@ -5,7 +5,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 
-namespace ItemManagementSystem1.Services.AuthenticationService
+namespace SOAProject.Services.AuthenticationService
 {
     public class TokenService
     {

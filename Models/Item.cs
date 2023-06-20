@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ItemManagementSystem1.Models
+namespace SOAProject.Models
 {
     public class Item
     {

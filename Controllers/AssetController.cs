@@ -1,10 +1,10 @@
-using ItemManagementSystem1.DTOs;
-using ItemManagementSystem1.Models;
-using ItemManagementSystem1.Services.AssetService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using SOAProject.DTOs;
+using SOAProject.Models;
+using SOAProject.Services.AssetService;
 
-namespace ItemManagementSystem1.Controllers;
+namespace SOAProject.Controllers;
 
 [ApiController]
 [Route("api/assets")]
