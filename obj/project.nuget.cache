@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "eyWUsP5EfJEVa3RVYBt2uCQjTxo05IlnOjiyh29Tzqqfv8EZJbY6ge6/xnvE2g2xLkVj3rkl4uNuQ0USlBOBeg==",
+  "dgSpecHash": "6+eKWWUgRkM7ZGbfKZOpeBBEpxDwBuVtI7uSglamq/QzN3ARLg2saVTA9DZfBudGbLtBDq3SOgvCM6+yXIX/cQ==",
   "success": true,
-  "projectFilePath": "/Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProject/SOAProject.csproj",
+  "projectFilePath": "/Users/meritonademi/Downloads/SoaProject/SOAProject/SOAProject.csproj",
   "expectedPackageFiles": [
     "/Users/meritonademi/.nuget/packages/automapper/12.0.1/automapper.12.0.1.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+    "/Users/meritonademi/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.aspnetcore.authentication.jwtbearer/6.0.15/microsoft.aspnetcore.authentication.jwtbearer.6.0.15.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.aspnetcore.cryptography.internal/6.0.15/microsoft.aspnetcore.cryptography.internal.6.0.15.nupkg.sha512",
@@ -37,6 +38,7 @@
     "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.protocols.openidconnect/6.10.0/microsoft.identitymodel.protocols.openidconnect.6.10.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.identitymodel.tokens/6.10.0/microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/meritonademi/.nuget/packages/moq/4.18.4/moq.4.18.4.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/npgsql/6.0.0/npgsql.6.0.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/npgsql.entityframeworkcore.postgresql/6.0.0/npgsql.entityframeworkcore.postgresql.6.0.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
@@ -45,6 +47,7 @@
     "/Users/meritonademi/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/system.diagnostics.diagnosticsource/6.0.1/system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+    "/Users/meritonademi/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/system.identitymodel.tokens.jwt/6.10.0/system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512"

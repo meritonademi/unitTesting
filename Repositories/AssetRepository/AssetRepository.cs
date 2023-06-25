@@ -14,7 +14,7 @@ public class AssetRepository : IAssetRepository
 
     public async Task<IEnumerable<Asset>> GetAllAssets()
     {
-        List<Asset> assets = new List<Asset>(_dbContext.Assets);
+        List<Asset> assets = new List<Asset>();
 
         var fullEntries = _dbContext.Assets.Join(
             _dbContext.Categories,

@@ -15,7 +15,7 @@ public class EmployeeRepository : IEmployeeRepository
 
     public async Task<IEnumerable<Employee>> GetAllEmployees()
     {
-        List<Employee> employee = new List<Employee>(_dbContext.Employees);
+        List<Employee> employee = new List<Employee>();
 
         var fullEntries = _dbContext.Employees.Join(
             _dbContext.Departments,

@@ -1,4 +1,9 @@
 using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using SOAProject.Data;
 using SOAProject.Repositories.AssetEmployeeRepository;
 using SOAProject.Repositories.AssetRepository;
@@ -11,11 +16,6 @@ using SOAProject.Services.AuthenticationService;
 using SOAProject.Services.CategoryService;
 using SOAProject.Services.DepartmentService;
 using SOAProject.Services.EmployeeService;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -52,7 +52,10 @@ builder.Services.AddSwaggerGen(option =>
     });
 });
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+{
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.EnableSensitiveDataLogging();
+});
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAnyOrigin", builder =>
