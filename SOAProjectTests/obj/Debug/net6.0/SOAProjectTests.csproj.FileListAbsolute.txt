@@ -132,3 +132,4 @@
 /Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProjectTests/obj/Debug/net6.0/SOAProjectTests.pdb
 /Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProjectTests/obj/Debug/net6.0/SOAProjectTests.genruntimeconfig.cache
 /Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProjectTests/obj/Debug/net6.0/ref/SOAProjectTests.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProjectTests/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll
