@@ -54,3 +54,4 @@
 /Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProject/obj/Debug/net6.0/SOAProject.pdb
 /Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProject/obj/Debug/net6.0/SOAProject.genruntimeconfig.cache
 /Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProject/obj/Debug/net6.0/ref/SOAProject.dll
+/Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProject/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll

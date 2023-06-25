@@ -185,6 +185,22 @@
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/6.0.14": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.14"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/6.0.15": {
         "type": "package",
         "dependencies": {
@@ -940,6 +956,20 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
+    "Microsoft.EntityFrameworkCore.InMemory/6.0.14": {
+      "sha512": "taDsbRttTHIjXRZsypAUXHpGE/5I7A82Ew4/YDURY1uChZbFl0lTHKdhHsBEsw2lCF1b2zoHnsTb/4EFC/FbUQ==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/6.0.14",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.6.0.14.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
+      ]
+    },
     "Microsoft.EntityFrameworkCore.Relational/6.0.15": {
       "sha512": "ouk4es/CzwxjXl33mb2hJzitluc2CD9rujZVBaUy3w3fn8qMjlktMOhf5mIAS7e3sreBikOBwaxp9/y/N/O2NQ==",
       "type": "package",
@@ -1663,6 +1693,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.15",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.15",
       "Microsoft.EntityFrameworkCore >= 6.0.15",
+      "Microsoft.EntityFrameworkCore.InMemory >= 6.0.14",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.15",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 6.0.0",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -1724,6 +1755,10 @@
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[6.0.15, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
+            "target": "Package",
+            "version": "[6.0.14, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xq97be3xBXJPbC2cQB6lxeoSS0Ec9O8sOc8K95/7ts7+pgLhxEy5D8mjFjMN1fIP5ZMDaLc6KIjAcJU4gLT4Rg==",
+  "dgSpecHash": "eyWUsP5EfJEVa3RVYBt2uCQjTxo05IlnOjiyh29Tzqqfv8EZJbY6ge6/xnvE2g2xLkVj3rkl4uNuQ0USlBOBeg==",
   "success": true,
   "projectFilePath": "/Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProject/SOAProject.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "/Users/meritonademi/.nuget/packages/microsoft.entityframeworkcore.abstractions/6.0.15/microsoft.entityframeworkcore.abstractions.6.0.15.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.entityframeworkcore.analyzers/6.0.15/microsoft.entityframeworkcore.analyzers.6.0.15.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.entityframeworkcore.design/6.0.15/microsoft.entityframeworkcore.design.6.0.15.nupkg.sha512",
+    "/Users/meritonademi/.nuget/packages/microsoft.entityframeworkcore.inmemory/6.0.14/microsoft.entityframeworkcore.inmemory.6.0.14.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.entityframeworkcore.relational/6.0.15/microsoft.entityframeworkcore.relational.6.0.15.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.entityframeworkcore.tools/6.0.15/microsoft.entityframeworkcore.tools.6.0.15.nupkg.sha512",
     "/Users/meritonademi/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
