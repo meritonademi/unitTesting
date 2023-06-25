@@ -1436,6 +1436,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
           "Microsoft.EntityFrameworkCore": "6.0.15",
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.14",
+          "Moq": "4.18.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },

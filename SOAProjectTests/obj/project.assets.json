@@ -2457,6 +2457,7 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.15",
           "Microsoft.EntityFrameworkCore": "6.0.15",
           "Microsoft.EntityFrameworkCore.InMemory": "6.0.14",
+          "Moq": "4.18.4",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "6.0.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -7668,11 +7669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProjectTests/SOAProjectTests.csproj",
+      "projectUniqueName": "/Users/meritonademi/Downloads/SoaProject/SOAProjectTests/SOAProjectTests.csproj",
       "projectName": "SOAProjectTests",
-      "projectPath": "/Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProjectTests/SOAProjectTests.csproj",
+      "projectPath": "/Users/meritonademi/Downloads/SoaProject/SOAProjectTests/SOAProjectTests.csproj",
       "packagesPath": "/Users/meritonademi/.nuget/packages/",
-      "outputPath": "/Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProjectTests/obj/",
+      "outputPath": "/Users/meritonademi/Downloads/SoaProject/SOAProjectTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/meritonademi/.nuget/NuGet/NuGet.Config"
@@ -7687,8 +7688,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProject/SOAProject.csproj": {
-              "projectPath": "/Users/meritonademi/Downloads/ItemManagementSystem1 4/SOAProject/SOAProject.csproj"
+            "/Users/meritonademi/Downloads/SoaProject/SOAProject/SOAProject.csproj": {
+              "projectPath": "/Users/meritonademi/Downloads/SoaProject/SOAProject/SOAProject.csproj"
             }
           }
         }

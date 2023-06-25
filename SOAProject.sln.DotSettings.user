@@ -1,17 +1,62 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">/Users/meritonademi/Library/Caches/JetBrains/Rider2022.3/resharper-host/temp/Rider/vAny/CoverageData/_SOAProject.2112320960/Snapshot/snapshot.utdcvr</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=150b5806_002De85e_002D4126_002D8245_002D8c36d3a4cf42/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RemoveEmployee_ShouldRemoveEmployeeFromDbContext" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProjectTests.EmployeeRepositoryTest.RemoveEmployee_ShouldRemoveEmployeeFromDbContext&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2973479f_002D9d54_002D4bf5_002Db3e7_002Dd7b971674f77/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="EmployeeRepositoryTest #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProjectTests.EmployeeRepositoryTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3a45a9e5_002D1b57_002D43ab_002D8e67_002D26d27e4465b2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RemoveEmployee_ShouldRemoveEmployeeFromDbContext #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProjectTests.EmployeeRepositoryTest.RemoveEmployee_ShouldRemoveEmployeeFromDbContext&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ec848d97_002D7330_002D4f38_002D8346_002Df4097a9a1741/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="EmployeeRepositoryTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=67776dea_002Ddabf_002D4bae_002D85d5_002D9c65c7ad0632/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="RemoveAsset_ShouldRemoveAssetFromDatabase" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Tests.AssetRepositoryTests.RemoveAsset_ShouldRemoveAssetFromDatabase&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d0427676_002Dc5b7_002D4a87_002D9d5f_002Dce9703ec44ba/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="EmployeeRepositoryTest #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Or&gt;
+    &lt;ProjectFile&gt;746A60EC-96E1-4D89-80C4-36DCF457D732/f:AssetEmployeeRepositoryTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;746A60EC-96E1-4D89-80C4-36DCF457D732/f:AssetRepositoryTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;746A60EC-96E1-4D89-80C4-36DCF457D732/f:CategoryRepositoryTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;746A60EC-96E1-4D89-80C4-36DCF457D732/f:CategoryServiceTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;746A60EC-96E1-4D89-80C4-36DCF457D732/f:DepartmentRepositoryTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;746A60EC-96E1-4D89-80C4-36DCF457D732/f:DepartmentServiceTests.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;746A60EC-96E1-4D89-80C4-36DCF457D732/f:EmployeeRepositoryTest.cs&lt;/ProjectFile&gt;
+    &lt;ProjectFile&gt;746A60EC-96E1-4D89-80C4-36DCF457D732/f:EmployeeServiceTests.cs&lt;/ProjectFile&gt;
+    &lt;TestAncestor&gt;
+      &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Services.AssetService.Tests.AssetServiceTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Services.AssetEmployeeService.Tests.AssetEmployeeServiceTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Controllers.Tests.AssetControllerTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::CategoryControllerTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::EmployeeControllerTests&lt;/TestId&gt;
+      &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Tests.Controllers.DepartmentControllerTests&lt;/TestId&gt;
+    &lt;/TestAncestor&gt;
+  &lt;/Or&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ec848d97_002D7330_002D4f38_002D8346_002Df4097a9a1741/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="EmployeeRepositoryTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProjectTests.EmployeeRepositoryTest&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Tests.AssetRepositoryTests&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=f68d93d2_002D519c_002D413e_002Dad98_002De384b4ede926/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="UpdateAsset_ShouldUpdateAssetEmployeeInDatabase" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Tests.AssetEmployeeRepositoryTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Tests.EmployeeServiceTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProjectTests.EmployeeRepositoryTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Tests.AssetRepositoryTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Tests.CategoryRepositoryTests&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::746A60EC-96E1-4D89-80C4-36DCF457D732::net6.0::SOAProject.Tests.DepartmentRepositoryTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

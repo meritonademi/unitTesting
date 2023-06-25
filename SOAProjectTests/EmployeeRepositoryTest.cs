@@ -13,14 +13,12 @@ public class EmployeeRepositoryTest
     public EmployeeRepositoryTest()
     {
         _options = new DbContextOptionsBuilder<AppDbContext>()
-            .UseInMemoryDatabase(databaseName: "test_database")
-            .Options;
+            .UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
     }
 
     [Fact]
     public async Task GetAllEmployees_ShouldReturnAllEmployeesWithDepartments()
     {
-        // Arrange
         using (var context = new AppDbContext(_options))
         {
             var employeeRepository = new EmployeeRepository(context);
@@ -58,7 +56,6 @@ public class EmployeeRepositoryTest
             var employeeRepository = new EmployeeRepository(context);
             await SeedDatabase(context);
             var employee = await employeeRepository.GetEmployeeById(99);
-
             Assert.Null(employee);
         }
     }
@@ -118,8 +115,7 @@ public class EmployeeRepositoryTest
         var department2 = new Department { Id = 2, Name = "Department 2" };
         var employee1 = new Employee { Id = 1, Name = "John", SurName = "Doe", DepartmentId = 1, Tel = "1234567890" };
         var employee2 = new Employee { Id = 2, Name = "Jane", SurName = "Smith", DepartmentId = 2, Tel = "9876543210" };
-        var employee3 = new Employee
-            { Id = 3, Name = "Alice", SurName = "Johnson", DepartmentId = 1, Tel = "5555555555" };
+        var employee3 = new Employee { Id = 3, Name = "Alice", SurName = "Johnson", DepartmentId = 1, Tel = "5555555555" };
 
         context.Departments.AddRange(department1, department2);
         context.Employees.AddRange(employee1, employee2, employee3);

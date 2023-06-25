@@ -12,7 +12,7 @@ namespace SOAProject.Tests
         public AssetRepositoryTests()
         {
             _options = new DbContextOptionsBuilder<AppDbContext>()
-                .UseInMemoryDatabase(Guid.NewGuid().ToString()).Options;
+                .UseInMemoryDatabase(Guid.NewGuid().ToString()).EnableSensitiveDataLogging().Options;
         }
 
         [Fact]
@@ -23,7 +23,7 @@ namespace SOAProject.Tests
                 var assetRepository = new AssetRepository(context);
                 await SeedDatabase(context);
                 var assets = await assetRepository.GetAllAssets();
-                
+
                 Assert.NotNull(assets);
                 Assert.Equal(3, assets.Count());
                 foreach (var asset in assets)
@@ -39,7 +39,7 @@ namespace SOAProject.Tests
             using (var context = new AppDbContext(_options))
             {
                 var assetRepository = new AssetRepository(context);
-                await SeedDatabase(context); 
+                await SeedDatabase(context);
                 var asset = await assetRepository.GetAssetById(1);
 
                 Assert.NotNull(asset);
@@ -54,7 +54,7 @@ namespace SOAProject.Tests
             using (var context = new AppDbContext(_options))
             {
                 var assetRepository = new AssetRepository(context);
-                await SeedDatabase(context); 
+                await SeedDatabase(context);
                 var asset = await assetRepository.GetAssetById(99);
                 Assert.Null(asset);
             }
@@ -66,12 +66,10 @@ namespace SOAProject.Tests
             using (var context = new AppDbContext(_options))
             {
                 var assetRepository = new AssetRepository(context);
-                var asset = new Asset { Id = 4, Name = "New Asset", CategoryId = 1 };
+                var asset = new Asset { Id = 4, Name = "New Asset", CategoryId = 1, SerialNr = "asset4" };
 
-                // Act
                 var addedAsset = assetRepository.AddAssetAsync(asset);
 
-                // Assert
                 Assert.Equal(4, addedAsset.Id);
                 Assert.Contains(context.Assets, a => a.Id == 4);
             }
@@ -83,25 +81,26 @@ namespace SOAProject.Tests
             using (var context = new AppDbContext(_options))
             {
                 var assetRepository = new AssetRepository(context);
-                await SeedDatabase(context); 
-                var assetToUpdate = new Asset { Id = 1, Name = "Updated Asset", CategoryId = 2 };
+                await SeedDatabase(context);
+                var assetToUpdate = new Asset { Id = 1, Name = "Updated Asset", CategoryId = 2, SerialNr = "Asset1" };
 
                 var asset = await assetRepository.GetAssetById(1);
                 assetRepository.UpdateAsset(asset, assetToUpdate);
 
                 Assert.Equal("Updated Asset", asset.Name);
-                Assert.Equal(2, asset.CategoryId);
+                Assert.Equal("asset1", asset.SerialNr);
+                Assert.Equal(1, asset.CategoryId);
             }
         }
 
         [Fact]
-        public void RemoveAsset_ShouldRemoveAssetFromDatabase()
+        public async void RemoveAsset_ShouldRemoveAssetFromDatabase()
         {
             using (var context = new AppDbContext(_options))
             {
                 var assetRepository = new AssetRepository(context);
-                var assetToRemove = new Asset { Id = 1, Name = "Asset 1", CategoryId = 1 };
-                assetRepository.RemoveAsset(assetToRemove);
+                await SeedDatabase(context);
+                assetRepository.RemoveAsset(new Asset { Id = 1, Name = "Asset 1", CategoryId = 1, SerialNr = "asset1"});
                 Assert.DoesNotContain(context.Assets, a => a.Id == 1);
             }
         }
@@ -110,9 +109,9 @@ namespace SOAProject.Tests
         {
             var category1 = new Category { Id = 1, Name = "Category 1" };
             var category2 = new Category { Id = 2, Name = "Category 2" };
-            var asset1 = new Asset { Id = 1, Name = "Asset 1", CategoryId = 1 };
-            var asset2 = new Asset { Id = 2, Name = "Asset 2", CategoryId = 2 };
-            var asset3 = new Asset { Id = 3, Name = "Asset 3", CategoryId = 1 };
+            var asset1 = new Asset { Id = 1, Name = "Asset 1", CategoryId = 1, SerialNr = "asset1" };
+            var asset2 = new Asset { Id = 2, Name = "Asset 2", CategoryId = 2, SerialNr = "asset2" };
+            var asset3 = new Asset { Id = 3, Name = "Asset 3", CategoryId = 1, SerialNr = "asset3" };
 
             context.Categories.AddRange(category1, category2);
             context.Assets.AddRange(asset1, asset2, asset3);
